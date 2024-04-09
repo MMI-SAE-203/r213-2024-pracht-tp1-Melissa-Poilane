@@ -31,4 +31,17 @@ const menuIsOpen = ref(false)
 </Transition>
 
   <h1 class="text-2xl">Bonjour le monde !</h1>
+
+  <section>
+    <button class="text-xl">bouton 1</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores hic, pariatur sed veritatis tempore atque ducimus natus sapiente eveniet, corporis laborum ullam eaque dignissimos at iste dolore consequuntur? Blanditiis, labore.</p>
+  </section>
+  <section>
+    <button class="text-xl">bouton 2</button>
+    <p>Error quae itaque iste molestiae ipsum earum voluptas similique delectus atque laborum consectetur et non consequatur ex nihil, repudiandae alias necessitatibus nemo nisi? Reiciendis, modi quia ipsum ratione dolorem ut!</p>
+  </section>
+  <section>
+    <button class="text-xl">bouton 3</button>
+    <p>Fuga, ea adipisci omnis dolore autem veniam reiciendis voluptate praesentium repellat aperiam ipsa, tempore voluptatibus? Ab, ea est! Eum voluptates at deserunt error accusamus omnis cum voluptatem incidunt dicta dolore.</p>
+  </section>
 </template>
