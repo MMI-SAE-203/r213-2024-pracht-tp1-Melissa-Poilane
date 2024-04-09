@@ -1,18 +1,16 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const maVar = ref(false);
-
 const menuIsOpen = ref(false)
 </script>
 
 <template>
-  <button @pointerdown="maVar = !maVar">Menu</button>
 
 <button
   aria-controls="mainNav"
   aria-expanded="true"
   class="rounded-full border-2 border-red-600 bg-red-300 px-2"
+  @pointerdown="menuIsOpen = !menuIsOpen"
 >
   menu
 </button>
