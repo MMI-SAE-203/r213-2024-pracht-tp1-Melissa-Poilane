@@ -2,6 +2,8 @@
 import { ref } from 'vue';
 
 const maVar = ref(false);
+
+const menuIsOpen = ref(false)
 </script>
 
 <template>
@@ -15,7 +17,7 @@ const maVar = ref(false);
   menu
 </button>
 <!-- nav#mainNav>ul>li*3>a[href="#"]{item $} -->
-<nav id="mainNav">
+<nav v-show="menuIsOpen" id="mainNav">
   <ul>
     <li><a href="#">item 1</a></li>
     <li><a href="#">item 2</a></li>
@@ -23,5 +25,5 @@ const maVar = ref(false);
   </ul>
 </nav>
 
-  <h1 v-show="maVar" class="text-2xl">Bonjour le monde !</h1>
+  <h1 class="text-2xl">Bonjour le monde !</h1>
 </template>
