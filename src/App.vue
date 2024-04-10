@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onErrorCaptured } from 'vue'
 import { RouterLink, RouterView } from 'vue-router/auto'
+import FooterPage from './components/FooterPage.vue' // Importez le composant FooterPage
 
 onErrorCaptured((err, instance, info) => {
   console.error('erreur : ', err, '\ninfo : ', info, '\ncomposant : ', instance)
@@ -23,4 +24,5 @@ onErrorCaptured((err, instance, info) => {
       <component :is="Component" />
     </Suspense>
   </RouterView>
+  <FooterPage /> <!-- Utilisez le composant FooterPage ici -->
 </template>
