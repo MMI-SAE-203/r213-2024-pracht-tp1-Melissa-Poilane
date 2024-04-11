@@ -3,6 +3,7 @@ import { ref } from 'vue';
 
 const menuIsOpen = ref(false)
 const sectionOpen = ref(1)
+const activeAccordion = ref<number | null>(null)
 const sectionsData = [
   {
     label: 'bouton 1',
@@ -73,7 +74,7 @@ const sectionsData = [
   </section>
 
   <div v-for="(section, key) in sectionsData" :key="key">
-  <button class="accordion" @click="toggleAccordion(key)">
+  <button class="accordion" @pointerdown="activeAccordion = activeAccordion === key ? null : key">
     {{ section.label }}
   </button>
   <div class="panel" v-show="activeAccordion === key">
